@@ -28,7 +28,7 @@ to_col <- function(s) {
 #  LOAD DATA
 # =========================
 # Adjust path
-data <- readxl::read_excel("C:/Users/PC/OneDrive - One Family Foundation/GCSI/Global Ecosystem/test/analysis.xlsx", sheet = 1)
+data <- readxl::read_excel("data/analysis.xlsx", sheet = 1)
 
 # Clean column names
 names(data) <- str_replace_all(names(data), "\\s+", "_")
